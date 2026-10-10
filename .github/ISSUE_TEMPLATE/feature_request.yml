@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose a feature or improvement.
+title: "[Feature] "
+assignees: [QwQBiG]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Explain the need this change would address.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the intended behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and additional context
+    validations:
+      required: false

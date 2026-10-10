@@ -1,0 +1,55 @@
+name: Configuration checks
+
+"on":
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+      - name: Install YAML parser
+        run: python -m pip install --disable-pip-version-check PyYAML==6.0.3
+      - name: Check configuration
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import yaml
+
+          paths = sorted(p for p in Path(".github").rglob("*") if p.suffix in (".yml", ".yaml"))
+          for path in paths:
+              data = yaml.safe_load(path.read_text(encoding="utf-8"))
+              assert isinstance(data, dict), f"{path}: expected a YAML mapping"
+              if path.parent.name == "ISSUE_TEMPLATE" and path.stem != "config":
+                  assert all(isinstance(data.get(key), str) and data[key].strip() for key in ("name", "description")), f"{path}: missing form metadata"
+                  body = data.get("body")
+                  assert isinstance(body, list) and body, f"{path}: missing form fields"
+                  assert all(isinstance(field, dict) for field in body), f"{path}: invalid form field"
+                  ids = [field.get("id") for field in body if field.get("type") != "markdown"]
+                  assert all(isinstance(key, str) and re.fullmatch(r"[A-Za-z0-9_-]+", key) for key in ids), f"{path}: invalid field ID"
+                  assert len(ids) == len(set(ids)), f"{path}: duplicate field ID"
+                  for field in body:
+                      assert field.get("type") in ("markdown", "input", "textarea", "dropdown", "checkboxes"), f"{path}: invalid field type"
+                      attributes = field.get("attributes")
+                      assert isinstance(attributes, dict), f"{path}: missing field attributes"
+                      key = "value" if field["type"] == "markdown" else "label"
+                      assert isinstance(attributes.get(key), str) and attributes[key].strip(), f"{path}: missing field {key}"
+              if path.parent.name == "workflows":
+                  assert data.get("on", data.get(True)), f"{path}: missing workflow triggers"
+                  assert isinstance(data.get("jobs"), dict) and data["jobs"], f"{path}: missing workflow jobs"
+          print(f"Checked {len(paths)} YAML files.")
+          PY

@@ -1,0 +1,21 @@
+name: Assign new issues
+
+"on":
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  assign:
+    if: ${{ github.event.issue.assignees[0] == null }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Assign an unassigned issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: gh issue edit "$ISSUE_NUMBER" --repo "$GH_REPO" --add-assignee QwQBiG
