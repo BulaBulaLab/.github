@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="280" height="104" viewBox="0 0 280 104" role="img" aria-labelledby="ticket-title ticket-desc">
   <title id="ticket-title">EXPLORE THE LAB — Public repositories</title>
-  <desc id="ticket-desc">An electric-lime ticket with an ink outline, a repository-index marker, a bold arrow, and a travelling progress bar.</desc>
+  <desc id="ticket-desc">A blossom-pink ticket with an ink outline, a repository-index marker, a bold arrow, and a travelling progress bar.</desc>
   <style>
     .scan{animation:scan 2.8s ease-in-out infinite}@keyframes scan{0%,100%{transform:translateX(0)}50%{transform:translateX(154px)}}
     @media(prefers-reduced-motion:reduce){.scan,.reply,.maker-arrow{animation:none}}
   </style>
   <path d="M14 5H258L269 16V77L259 87H14L5 78V14Z" transform="translate(5 7)" fill="#181b20"/>
-  <path d="M14 5H258L269 16V77L259 87H14L5 78V14Z" fill="#d7ff4f" stroke="#181b20" stroke-width="1.8" stroke-linejoin="miter"/>
+  <path d="M14 5H258L269 16V77L259 87H14L5 78V14Z" fill="#ffb7d5" stroke="#181b20" stroke-width="1.8" stroke-linejoin="miter"/>
   <rect x="22" y="15" width="25" height="16" fill="#181b20"/>
-  <text x="34.5" y="26.5" text-anchor="middle" fill="#d7ff4f" font-family="sans-serif" font-size="10" font-weight="800" letter-spacing=".5">01</text>
+  <text x="34.5" y="26.5" text-anchor="middle" fill="#ffb7d5" font-family="sans-serif" font-size="10" font-weight="800" letter-spacing=".5">01</text>
   <path d="M56 23H214" fill="none" stroke="#181b20" stroke-width="1" stroke-dasharray="2 4" opacity=".3"/>
   <path d="M238 17V27M243 17V23M248 17V27" fill="none" stroke="#181b20" stroke-width="1.4"/>
   <text x="22" y="49" fill="#181b20" font-family="sans-serif" font-size="18" font-weight="800" letter-spacing=".5">EXPLORE THE LAB</text>

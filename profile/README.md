@@ -1,12 +1,12 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/BulaBulaLab/.github/main/profile/assets/station-hero-mobile.svg" />
-    <img src="https://raw.githubusercontent.com/BulaBulaLab/.github/main/profile/assets/station-hero.svg" width="100%" alt="BulaBulaLab — Small lab. Big what-ifs. An anime maker turns a typed idea into a finished experiment in a looping comic scene." />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/BulaBulaLab/.github/main/profile/assets/station-hero-mobile.svg?palette=pink" />
+    <img src="https://raw.githubusercontent.com/BulaBulaLab/.github/main/profile/assets/station-hero.svg?palette=pink" width="100%" alt="BulaBulaLab — Small lab. Big what-ifs. An anime maker turns a typed idea into a finished experiment in a looping comic scene." />
   </picture>
 </p>
 
 <p align="center">
-  <a href="https://github.com/orgs/BulaBulaLab/repositories"><img src="https://raw.githubusercontent.com/BulaBulaLab/.github/main/profile/assets/ticket-lab.svg" width="280" height="104" alt="Explore the lab — public repositories" /></a>
+  <a href="https://github.com/orgs/BulaBulaLab/repositories"><img src="https://raw.githubusercontent.com/BulaBulaLab/.github/main/profile/assets/ticket-lab.svg?palette=pink" width="280" height="104" alt="Explore the lab — public repositories" /></a>
   <a href="https://github.com/BulaBulaLab/.github/discussions"><img src="https://raw.githubusercontent.com/BulaBulaLab/.github/main/profile/assets/ticket-ideas.svg" width="280" height="104" alt="Bring an idea — start a conversation" /></a>
   <a href="https://github.com/QwQBiG"><img src="https://raw.githubusercontent.com/BulaBulaLab/.github/main/profile/assets/ticket-maker.svg" width="280" height="104" alt="Meet the maker — QwQBiG" /></a>
 </p>
