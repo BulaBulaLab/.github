@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="210" height="44" viewBox="0 0 210 44" role="img" aria-labelledby="title">
-  <title id="title">Explore the lab</title>
-  <rect x=".5" y=".5" width="209" height="43" rx="12" fill="#252239" stroke="#9282af" stroke-opacity=".45"/>
-  <g transform="translate(1 1)" fill="none" stroke="#c4b5df" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><path d="M14 12h6l2 3h8v13H14z"/><path d="M14 17h16"/></g>
-  <text x="46" y="27" fill="#e5ddef" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600">Explore the lab</text>
-  <path d="m187 18 4 4-4 4m-7-4h11" fill="none" stroke="#b6cfc9" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
