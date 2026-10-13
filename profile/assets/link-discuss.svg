@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="44" viewBox="0 0 210 44" role="img" aria-labelledby="title">
+  <title id="title">Bring an idea</title>
+  <rect x=".5" y=".5" width="209" height="43" rx="12" fill="#252239" stroke="#9282af" stroke-opacity=".45"/>
+  <g transform="translate(1 1)" fill="none" stroke="#c4b5df" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><path d="M13 12h18v12H22l-6 5v-5h-3z"/><path d="M18 17h8m-8 3h5"/></g>
+  <text x="46" y="27" fill="#e5ddef" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600">Bring an idea</text>
+  <path d="m187 18 4 4-4 4m-7-4h11" fill="none" stroke="#b6cfc9" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

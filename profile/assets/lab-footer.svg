@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="28" viewBox="0 0 1040 28" role="img" aria-labelledby="title desc">
+  <title id="title">A small star on the lab horizon</title>
+  <desc id="desc">A quiet lavender star and mint-colored signal travelling along a thin line.</desc>
+  <defs><linearGradient id="line"><stop stop-color="#9f8bbd" stop-opacity="0"/><stop offset=".5" stop-color="#9f8bbd" stop-opacity=".5"/><stop offset="1" stop-color="#9f8bbd" stop-opacity="0"/></linearGradient></defs>
+  <style>.signal{animation:signal 12s linear infinite}@keyframes signal{from{stroke-dashoffset:30}to{stroke-dashoffset:-460}}@media(prefers-reduced-motion:reduce){.signal{animation:none}}</style>
+  <path d="M60 14H484M556 14H980" stroke="url(#line)"/>
+  <path class="signal" d="M60 14H484" stroke="#91b9ad" stroke-linecap="round" stroke-dasharray="22 460" stroke-opacity=".65"/>
+  <path d="M520 6q1 7 8 8-7 1-8 8-1-7-8-8 7-1 8-8z" fill="#a68ebf"/>
+</svg>
